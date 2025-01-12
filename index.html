@@ -8,54 +8,75 @@
 </head>
 <body>
     <header>
-        <h1>Анкеты мастеров</h1>
-        <nav>
-            <a href="#home">Главная</a>
-            <a href="#masters">Анкеты</a>
-            <a href="#contacts">Контакты</a>
-        </nav>
+        <div class="container">
+            <h1>Анкеты мастеров</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#masters">Мастера</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section id="home">
+    
+    <section id="home">
+        <div class="container">
             <h2>Добро пожаловать!</h2>
-            <p>Найдите профессионалов для любой работы. Мы собрали лучших мастеров для вас!</p>
-        </section>
-
-        <section id="masters">
-            <h2>Список мастеров</h2>
-            <div class="card">
-                <img src="images/master1.jpg" alt="Иван Иванов">
-                <h3>Иван Иванов</h3>
-                <p>Сантехник с 10-летним опытом</p>
-                <a href="master.html?id=1">Подробнее</a>
+            <p>Найдите лучших мастеров для решения ваших задач. Мы предлагаем профессионалов в разных областях!</p>
+        </div>
+    </section>
+    
+    <section id="masters">
+        <div class="container">
+            <h2>Наши мастера</h2>
+            <div class="cards">
+                <!-- Карточки мастеров -->
+                <div class="card">
+                    <img src="images/master1.jpg" alt="Мастер 1">
+                    <h3>Иван Иванов</h3>
+                    <p>Сантехник</p>
+                    <a href="master1.html">Подробнее</a>
+                </div>
+                <div class="card">
+                    <img src="images/master2.jpg" alt="Мастер 2">
+                    <h3>Ольга Петрова</h3>
+                    <p>Электрик</p>
+                    <a href="master2.html">Подробнее</a>
+                </div>
+                <div class="card">
+                    <img src="images/master3.jpg" alt="Мастер 3">
+                    <h3>Александр Сидоров</h3>
+                    <p>Маляр</p>
+                    <a href="master3.html">Подробнее</a>
+                </div>
             </div>
-            <div class="card">
-                <img src="images/master2.jpg" alt="Ольга Петрова">
-                <h3>Ольга Петрова</h3>
-                <p>Электрик с высоким рейтингом</p>
-                <a href="master.html?id=2">Подробнее</a>
-            </div>
-        </section>
-
-        <section id="contacts">
-            <h2>Обратная связь</h2>
-            <form action="#" method="POST">
+        </div>
+    </section>
+    
+    <section id="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Если у вас есть вопросы, свяжитесь с нами через контактную форму или по телефону.</p>
+            <form action="#">
                 <label for="name">Ваше имя:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Ваш email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Ваше сообщение:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" required></textarea>
+                
                 <button type="submit">Отправить</button>
             </form>
-        </section>
-    </main>
+        </div>
+    </section>
+    
     <footer>
-        <p>&copy; 2025 Анкеты мастеров</p>
+        <div class="container">
+            <p>&copy; 2025 Анкеты мастеров. Все права защищены.</p>
+        </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
