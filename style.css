@@ -1,147 +1,97 @@
-/* Общие стили */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* styles.css */
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #1c1c1c;
-    color: #f4f4f4;
+    background-color: #121212;
+    color: #FFA500;
 }
 
-/* Стили для шапки */
 header {
-    background-color: #222;
-    padding: 20px 0;
-    color: #f4f4f4;
+    background-color: #000;
+    padding: 10px 20px;
+    text-align: center;
 }
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 header h1 {
-    font-size: 28px;
-    margin-left: 20px;
+    margin: 0;
+    color: #FFA500;
 }
+
 nav ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
-}
-nav a {
-    text-decoration: none;
-    color: #ffa500;
-    font-weight: bold;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Главная секция */
-#home {
-    background-color: #333;
-    padding: 40px 0;
-}
-#home h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-#home p {
-    text-align: center;
-    font-size: 18px;
-}
-
-/* Секции мастеров */
-#masters {
-    padding: 40px 0;
-    background-color: #444;
-}
-#masters h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-.cards {
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-.card {
-    background-color: #555;
-    padding: 20px;
-    border-radius: 8px;
-    width: 250px;
-    text-align: center;
+
+nav ul li {
+    display: inline;
 }
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-.card h3 {
-    font-size: 24px;
-    margin: 15px 0;
-}
-.card p {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-.card a {
+
+nav ul li a {
+    color: #FFA500;
     text-decoration: none;
-    color: #ffa500;
     font-weight: bold;
 }
-.card a:hover {
+
+nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Секция контактов */
-#contacts {
-    background-color: #333;
-    padding: 40px 0;
-}
-#contacts h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-form input, form textarea {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 1px solid #666;
-    background-color: #555;
-    color: #f4f4f4;
-}
-form button {
-    padding: 15px;
-    font-size: 18px;
-    background-color: #ffa500;
-    color: #1c1c1c;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-}
-form button:hover {
-    background-color: #ffcc33;
+main {
+    padding: 20px;
 }
 
-/* Стили для подвала */
-footer {
-    background-color: #222;
-    padding: 20px 0;
+.profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.profile-card {
+    background-color: #1c1c1c;
+    border: 2px solid #FFA500;
+    border-radius: 10px;
+    padding: 15px;
     text-align: center;
 }
-footer p {
-    font-size: 16px;
+
+.profile-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.profile-card h2 {
+    margin: 10px 0;
+    color: #FFA500;
+}
+
+.profile-card p {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.details-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #FFA500;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.details-button:hover {
+    background-color: #ffb733;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #FFA500;
 }
