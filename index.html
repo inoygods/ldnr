@@ -4,36 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Анкеты мастеров</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        header {
+            background-color: #000;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #FFA500;
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            display: block;
+            width: 90%;
+            max-width: 300px;
+            text-align: center;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #FFA500;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #ffb733;
+        }
+
+        .profiles {
+            padding: 20px;
+        }
+
+        .profile-card {
+            background-color: #2c2c2c;
+            border: 2px solid #FFA500;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile-card img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .profile-card h2 {
+            margin: 10px 0;
+            color: #FFA500;
+        }
+
+        .profile-card p {
+            margin: 10px 0;
+            color: #ccc;
+        }
+
+        .profile-card .info {
+            margin: 10px 0;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .profile-card .details-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #FFA500;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .profile-card .details-button:hover {
+            background-color: #ffb733;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #000;
+            color: #FFA500;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Анкеты мастеров</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Анкеты</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        <section class="profiles">
-            <article class="profile-card">
-                <img src="photo1.jpg" alt="Фото мастера 1">
-                <h2>Мастер 1</h2>
-                <p>Краткое описание...</p>
-                <a href="profile1.html" class="details-button">Подробнее</a>
-            </article>
-            <article class="profile-card">
-                <img src="photo2.jpg" alt="Фото мастера 2">
-                <h2>Мастер 2</h2>
-                <p>Краткое описание...</p>
-                <a href="profile2.html" class="details-button">Подробнее</a>
-            </article>
-            <!-- Добавьте больше карточек по необходимости -->
-        </section>
+
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">Свободные сейчас</a>
+        <a href="#">Новые мастера</a>
+        <a href="#">Эскорт</a>
+        <a href="#">Массажисты</a>
+        <a href="#">Подбор мастера</a>
+    </nav>
+
+    <main class="profiles">
+        <div class="profile-card">
+            <img src="photo1.jpg" alt="Фото мастера">
+            <h2>Кира</h2>
+            <p class="info">Рост: 170 | Возраст: 27 | Вес: 55</p>
+            <p>1 час: 15000 | 2 часа: 30000</p>
+            <a href="https://t.me/username1" class="details-button" target="_blank">Связаться</a>
+        </div>
+
+        <div class="profile-card">
+            <img src="photo2.jpg" alt="Фото мастера">
+            <h2>Настя</h2>
+            <p class="info">Рост: 177 | Возраст: 35 | Вес: 65</p>
+            <p>1 час: 15000 | 2 часа: 40000</p>
+            <a href="https://t.me/username2" class="details-button" target="_blank">Связаться</a>
+        </div>
     </main>
+
     <footer>
         <p>© 2025 Анкеты мастеров. Все права защищены.</p>
     </footer>
